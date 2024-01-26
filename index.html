@@ -469,6 +469,72 @@
       <!-- ========== header end ========== -->
 
       <!-- ========== section start ========== -->
+      <!-- ADD PRODUCTS -->
+      <section id="xyz" style="z-index: 1000; visibility: hidden;" class="productAdd addProductListP">
+        <form action="#" class="addProductList">
+          <div class="">        
+            <label for="#">Product</label>
+            <input class="addInput" type="text" name="productName" id="" >
+          </div>
+          <div class="">
+            <label for="#">Image</label>
+            <input type="file" id="myFile" name="filename">
+          </div>
+          <div class="">
+            <label for="#">Category</label>
+            <select name="category" id="">
+              <option value="network">network</option>
+              <option value="network">laptops</option>
+            </select>
+          </div>
+          <div class="">
+            <label for="#">Price</label>
+            <input class="addInput" type="number" name="price" id="">
+          </div>
+          <button type="sub method="post" enctype="multipart/form-datamit">Add</button>
+        </form>
+      <!-- ADD CATEGORIES -->
+      </section>
+      <section id="catcc" style="z-index: 999; visibility: hidden;" class="categoryAdd addProductListP">
+        <form action="#" class="addProductList">
+          <label for="#">Category name</label>
+          <input type="text" name="name" id="">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <!-- EDIT PRODUCTS -->
+      <section id="pe" style="z-index: 999; visibility: hidden;" class="productEdit addProductListP">
+        <form action="#" class="addProductList">
+          <div class="">        
+            <label for="#">Product</label>
+            <input class="addInput" type="text" name="productName" id="" >
+          </div>
+          <div class="">
+            <label for="#">Image</label>
+            <input type="file" id="myFile" name="filename">
+          </div>
+          <div class="">
+            <label for="#">Category</label>
+            <select name="category" id="">
+              <option value="network">network</option>
+              <option value="network">laptops</option>
+            </select>
+          </div>
+          <div class="">
+            <label for="#">Price</label>
+            <input class="addInput" type="number" name="price" id="">
+          </div>
+          <button type="sub method="post" enctype="multipart/form-datamit">Add</button>
+          </form>
+      </section>
+      <!-- EDIT CATEGORIES -->
+      <section id="ce" style="z-index: 999; visibility: hidden;" class="categoryEdit addProductListP">
+        <form action="#" class="addProductList">
+          <label for="#">Category name</label>
+          <input type="text" name="name" id="">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
       <section class="section">
         <div class="container-fluid">
           <!-- ========== title-wrapper start ========== -->
@@ -585,7 +651,7 @@
                   <div class="">
                     <div class="d-flex flex-row">
                       <div class="d-flex mr-15 align-items-center">
-                        <button class="btn btn-primary" type="button">Add</button>
+                        <button id="addProductBtn" class="btn btn-primary" type="button">Add</button>
                       </div>
                       <nav class="navbar navbar-light">
                         <form class="form-inline d-flex flex-row">
@@ -607,7 +673,7 @@
                           <h6 class="text-sm text-medium">Products</h6>
                         </th>
                         <th class="min-width">
-                          <h6 class="text-sm text-medium">Category</h6>
+                          <h6 id="" class="text-sm text-medium">Category</h6>
                         </th>
                         <th class="min-width">
                           <h6 class="text-sm text-medium">price</h6>
@@ -647,7 +713,7 @@
                                 <a href="#0" class="text-gray">Remove</a>
                               </li>
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a id="editProductBtn" href="#0" class=" text-gray">Edit</a>
                               </li>
                             </ul>
                           </div>
@@ -788,7 +854,7 @@
                   <div class="">
                     <div class="d-flex flex-row">
                       <div class="d-flex mr-15 align-items-center">
-                        <button class="btn btn-primary" type="button">Add</button>
+                        <button id="addCategoryBtn" class="btn btn-primary" type="button">Add</button>
                       </div>
                       <nav class="navbar navbar-light">
                         <form class="form-inline d-flex flex-row">
@@ -846,7 +912,7 @@
                                 <a href="#0" class="text-gray">Remove</a>
                               </li>
                               <li class="dropdown-item">
-                                <a href="#0" class="text-gray">Edit</a>
+                                <a id="editCategoryBtn" href="#0" class="text-gray">Edit</a>
                               </li>
                             </ul>
                           </div>
@@ -1282,6 +1348,7 @@
     <script src="assets/js/world-merc.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/add-orders.js"></script>
 
     <script>
       // ======== jvectormap activation
